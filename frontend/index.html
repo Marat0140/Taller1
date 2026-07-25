@@ -1,45 +1,112 @@
-<!DOCTYPE html> <!--Doctype html donde comienza todo y se coloca en español con otrosdetalles-->
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaTechnologies</title>
+    <title>Nova Technologies</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header> <!--Header donde esta el h1 y el nav con sus 3 links-->
-        <h1>Nova Technologies</h1>
+    <header>
+        <div class="brand">
+            <h1>Nova Technologies</h1>
+            <span>Soluciones técnicas y soporte especializado</span>
+        </div>
         <nav>
-            <a href="./" target="_blank">Productos</a>
-            <a href="./">Redes sociales</a>
-            <a href="./">Contacto</a>
+            <a href="./index.html">Introducción</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./contacto.html">Contacto</a>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Bienvenidos</h2>
-            <p>Sean bienvenidos a Nova Technologies</p>
+        <section id="introduccion" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Tecnología · Mantenimiento · Soporte</p>
+                <h2>Innovación y precisión para tus equipos</h2>
+                <p>Nova Technologies ofrece soluciones confiables en reparación, mantenimiento y optimización de equipos y consolas mediante un enfoque técnico, claro y orientado a resultados.</p>
+                <div class="hero-actions">
+                    <a class="btn-primary" href="#contacto">Solicitar asesoría</a>
+                    <a class="btn-secondary" href="#servicios">Ver servicios</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <h3>¿Por qué elegirnos?</h3>
+                <ul class="feature-list">
+                    <li>Diagnóstico técnico detallado</li>
+                    <li>Reparaciones con enfoque profesional</li>
+                    <li>Soporte ágil y orientación personalizada</li>
+                </ul>
+            </div>
         </section>
 
-        <section> <!--Section donde estaran los prodcutos con un img-->
-            <h2>Productos</h2>
-            <article>
-                <img src="./consolareparacion.png" alt="consola">
-                <h3>Reparación de consola</h3>
-                <p>$ 100.000</p>
-            </article>
+        <section class="intro-grid">
+            <div>
+                <h2>Introducción institucional</h2>
+                <p>Somos un equipo orientado a la calidad técnica, la eficiencia operativa y la mejora continua. Cada intervención se desarrolla con criterios de confiabilidad, seguridad y resultados medibles.</p>
+                <p>Desde la evaluación inicial hasta la entrega final, nuestro trabajo se enfoca en restaurar el rendimiento, extender la vida útil de los equipos y ofrecer una experiencia clara para nuestros clientes.</p>
+            </div>
+            <div class="info-card">
+                <h3>Áreas de especialización</h3>
+                <ul class="feature-list">
+                    <li>Reparación de consolas</li>
+                    <li>Mantenimiento preventivo</li>
+                    <li>Optimización del rendimiento</li>
+                    <li>Asesoría técnica personalizada</li>
+                </ul>
+            </div>
         </section>
 
-        <section>
-            <h2>Contacto</h2>
-            <p>Contactanos para ser socio o para alguna otra solicitud</p>
-            <input type="text" placeholder="Ingresa tu correo">
+        <section id="servicios">
+            <h2>Servicios técnicos</h2>
+            <p>Ofrecemos soluciones integrales pensadas para usuarios que requieren un servicio responsable, rápido y técnicamente sólido.</p>
+            <div class="services-grid">
+                <article>
+                    <div class="icon">🛠️</div>
+                    <h3>Reparación de consola</h3>
+                    <p>Diagnóstico y reparación de fallas de hardware y software con procesos estructurados y seguimiento profesional.</p>
+                    <span>$100.000</span>
+                </article>
+                <article>
+                    <div class="icon">⚙️</div>
+                    <h3>Optimización de equipos</h3>
+                    <p>Mejora de rendimiento, limpieza interna y configuración para asegurar un funcionamiento estable.</p>
+                    <span>Desde $80.000</span>
+                </article>
+                <article>
+                    <div class="icon">💡</div>
+                    <h3>Asesoría técnica</h3>
+                    <p>Orientación especializada para la elección de componentes, mantenimiento y solución de problemas técnicos.</p>
+                    <span>Consulta personalizada</span>
+                </article>
+            </div>
         </section>
 
+        <section class="process">
+            <h2>Nuestra metodología</h2>
+            <p>Cada proyecto sigue un flujo claro de evaluación, ejecución y verificación para garantizar resultados de alto nivel.</p>
+            <div class="process-steps">
+                <div><strong>01</strong><span>Diagnóstico inicial</span></div>
+                <div><strong>02</strong><span>Plan de reparación</span></div>
+                <div><strong>03</strong><span>Implementación y prueba</span></div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-card">
+            <div>
+                <h2>Contacto técnico</h2>
+                <p>Conecta con nosotros para solicitar una cotización, participar como socio o resolver una necesidad específica.</p>
+                <p><strong>Email:</strong> contacto@novatechnologies.com</p>
+                <p><strong>Teléfono:</strong> +57 300 000 0000</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Ingresa tu correo">
+                <textarea placeholder="Describe tu solicitud o necesidad técnica"></textarea>
+                <button type="button">Enviar solicitud</button>
+            </form>
+        </section>
     </main>
 
-    <footer>Derechos reservados por Nova Technologies</footer>
-    
+    <footer>© 2026 Nova Technologies. Todos los derechos reservados.</footer>
 </body>
 </html>
